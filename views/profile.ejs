@@ -1,0 +1,13 @@
+<html>
+  <head> <title></title></head>
+    <body>
+      <% if(!currentUser) {%>
+       <p>User not found</p>
+      <% } %>
+      <% if(currentUser) {%>
+      <form action="/logout" method="GET">
+        <input type="submit" value="LOG OUT">
+      </form>
+      <% } %>
+    </body>
+</html>
